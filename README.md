@@ -104,6 +104,8 @@ SELECT SQL_NO_CACHE COUNT(id) FROM users WHERE MATCH(full_name) AGAINST('Law*' I
 Execute time: 0.0 ~ 0.016
 Result: 5956 records
 
+![my_sql_fulltext](https://github.com/user-attachments/assets/4b6ed468-492e-4f34-98ab-dc7c89951e77)
+
 Có thể thấy, dù kết quả trả về là như nhau: đều là 5956 bản ghi, nhưng thời gian thực hiện của SQL LIKE lâu hơn gấp hơn 90 lần so với sử dụng MATCH AGAINST.
 Trong trường hợp dữ liệu lớn hơn nữa, thì thời gian thực thi này càng xa hơn.
 
